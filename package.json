@@ -1,0 +1,23 @@
+{
+  "name": "keekuo-website",
+  "version": "1.0.0",
+  "description": "Keekuo website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonirt/keekuo-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yonirt/keekuo-website/issues"
+  },
+  "homepage": "https://github.com/Yonirt/keekuo-website#readme",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
