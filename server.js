@@ -1,7 +1,8 @@
-var express = require("express");
-var app = express();
-var router = express.Router();
-var path = __dirname + '/views/';
+const express = require("express");
+const app = express();
+const router = express.Router();
+const path = require('path');
+const view_dir = __dirname + '/views/';
 
 router.use(function (req,res,next) {
   console.log("/" + req.method);
@@ -9,11 +10,11 @@ router.use(function (req,res,next) {
 });
 
 router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
+  res.sendFile(view_dir + "index.html");
 });
 
 /*router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
+  res.sendFile(view_dir + "about.html");
 });
 
 router.get("/contact",function(req,res){
@@ -22,12 +23,11 @@ router.get("/contact",function(req,res){
 
 app.use("/",router);
 
-//app.use(express.static(__dirname + '/assets'));
-
-app.use("/assets", express.static(__dirname + '/assets'));
+console.log(path.join(__dirname + '/assets'))
+app.use('/assets', express.static(path.join(__dirname + '/assets')));
 
 /*app.use("*",function(req,res){
-  res.sendFile(path + "404.html");
+  res.sendFile(view_dir + "404.html");
 });*/
 
 app.listen(3000,function(){
