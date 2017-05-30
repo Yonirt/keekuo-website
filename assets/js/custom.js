@@ -4,7 +4,8 @@ $(document).ready(function(e) {
 
 	//GoogleMapinitialize();
 	// var height_w = $(window).height();
-	// $('.intro').height(height_w);
+	// $('.intro').height(height_w);
+
 	var width_w = $(window).width();
 	isMobile = navigator.userAgent.match(/(iPhone|iPod|Android|BlackBerry|iPad|IEMobile|Opera Mini)/);
 /* Header OnScroll Section ----------------------------------------------*/
@@ -21,7 +22,7 @@ $(document).ready(function(e) {
 
 	$("#defaultCountdown").countdown({ 
 		//Time set = Year, Month,Date; Starts from 0-jan month
-    	until: new Date(2015, 05, 17)
+    	until: new Date(2017, 05, 31)
     }); 
 
 /* Accordian Section ----------------------------------------------*/
@@ -34,7 +35,11 @@ $(document).ready(function(e) {
 		})
 	});
 
-	
+/* Subscription for submit click ------------------------------------*/
+	$('.formbtn[type=button]').click(function(event) {
+		event.preventDefault();
+		
+	});
 
 /* Svg Function ----------------------------------------------*/
 
@@ -81,7 +86,9 @@ $('#header nav li').click(function(){
 	$('.toggle-menu').trigger('click')
 	}
 	
-});
+});
+
+
 	 
 /* ScrollTop ----------------------------------------------*/
 

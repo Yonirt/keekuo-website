@@ -46,6 +46,14 @@
     -webkit-transform-origin: 0 0;
 }
 
+.slider-section{
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 8px 77px 56px;
+	margin-bottom:17%;	
+	position: relative;
+	z-index: 100;
+}
 
 /*
  2). Timer Section Styling
@@ -117,7 +125,7 @@
     box-shadow: 0.5px 0.866px 2px 0px rgb( 35, 31, 32 );
 	width: 41.5%;
 	float: right;
-	margin-top: -228px;
+	/*margin-top: -150px;*/
 	padding: 32px 30px 24px;
 	position: relative;
 	z-index: 30;
@@ -231,8 +239,14 @@
 	color: #242424;	
 	padding-bottom: 20px;
 }
+
+.welcome-text h3{
+	color: #242424;	
+	padding-bottom: 5px;
+}
+
 .welcome-text p{
-	margin-bottom: 18px;
+	margin-bottom: 24px;
 }
 .welcome-text p a{
 	color: #242424;

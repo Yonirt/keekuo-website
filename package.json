@@ -17,7 +17,8 @@
     "url": "https://github.com/Yonirt/keekuo-website/issues"
   },
   "homepage": "https://github.com/Yonirt/keekuo-website#readme",
-  "devDependencies": {
+  "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3"
   }
 }

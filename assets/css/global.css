@@ -52,11 +52,17 @@ h2{
 	font-weight: 700;
 	padding-bottom: 30px;
 }
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+
 p{
 	color: #242424;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.4;
 	
 }
 
@@ -85,6 +91,7 @@ img{
 	border-radius: 14px;
 	display: inline-block;
 	transition: 0.5s ease-in;
+	text-align: center;
 }
 .custom-btn:hover{
 	color: #fff;
@@ -253,7 +260,7 @@ h1 .logo{
 }
 #header nav li{
 	float: left;
-	padding: 30px 21px;
+	padding: 50px 21px 10px 21px;
 }
 #header nav li:last-child{
 	padding-right: 0;
@@ -261,7 +268,7 @@ h1 .logo{
 #header nav li a{
 	color: #ffffff;
 	font-size: 1.5em;
-	font-weight: 100;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
