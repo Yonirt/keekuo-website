@@ -262,7 +262,7 @@ $(window).scroll(function() {
 
 //Custom Map
 
-			if ($('#map-canvas').length) {
+		/*	if ($('#map-canvas').length) {
 				var map = new GMaps({
 					div : '#map-canvas',
 					lat : 27.9580178,
@@ -300,7 +300,7 @@ $(window).scroll(function() {
 						center : new google.maps.LatLng(27.9580178, -15.7368648),
 					});
 				}
-			}
+			}*/
 
 
 
