@@ -423,9 +423,10 @@ svg.contact{
 	height: 357px;
 	display: inline-block;
 	position: relative;
-    top: -75px;
-    left: -4px;	
-    z-index: 99;
+	top: -25px;
+	left: -4px;	
+	z-index: 99;
+	background-size: 350px;
 }
 .elite-content{
 	float: right;
