@@ -137,7 +137,8 @@ $(window).scroll(function() {
 		var curr_pos_win = $(this).scrollTop() + $('.header-inner').offset().top + $('.header-inner').height() - $(window).scrollTop();
 
 		for ( i = (position_holder.length) - 1; i >= 0; i--) {
-			if ($(position_holder[i]).offset().top < curr_pos_win) {
+			var a = $(position_holder[i]).offset();
+			if (a.top < curr_pos_win) {
 				$('.anchorlink').each(function() {
 					if ($(this).attr('name') == position_holder[i]) {
 						var classCheck = $(this).attr('class');
